@@ -1,0 +1,446 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #5a3d4a;
+    padding: 30px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.10);
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #d94f87;
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #987080;
+    font-size: 14px;
+}
+
+
+/* ================= LINK ================= */
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= TOMBOL KEMBALI ================= */
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #f48fb1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #e56b97;
+}
+
+.btn-kendaraan-masuk {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ff8fab, #e87598);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 14px rgba(232,117,152,.35);
+}
+
+.btn-kendaraan-masuk:hover {
+    background: linear-gradient(135deg, #e87598, #d45f85);
+    box-shadow: 0 6px 18px rgba(232,117,152,.45);
+    transform: translateY(-1px);
+}
+
+
+/* ================= ALERT / NOTIFIKASI ================= */
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.alert-success {
+    background-color: #e8f6ed;
+    color: #4f9169;
+    border: 1px solid #cdeeda;
+}
+
+.alert-error {
+    background-color: #fdecef;
+    color: #c8455f;
+    border: 1px solid #f7ccd4;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    background-color: white;
+    border: 1px solid #ffe0ec;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(221, 112, 153, 0.08);
+}
+
+.mb-card {
+    margin-bottom: 25px;
+}
+
+
+/* ================= CARD HEADER ================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    color: #d05a86;
+    font-size: 20px;
+}
+
+.total-badge {
+    display: inline-block;
+    background-color: #fce4ec;
+    color: #c83f76;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ================= FORM ================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #987080;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    border: 1px solid #f5c5d8;
+    background-color: #fffafd;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #5a3d4a;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f48fb1;
+    box-shadow: 0 0 0 3px rgba(244, 143, 177, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #c79aaa;
+}
+
+
+/* ================= FORM ACTION ================= */
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.btn-tambah {
+    display: inline-block;
+    background-color: #f48fb1;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tambah:hover {
+    background-color: #e56b97;
+}
+
+.btn-batal {
+    display: inline-block;
+    background-color: #f1f1f5;
+    color: #7a6b74;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-batal:hover {
+    background-color: #e6e6ec;
+}
+
+
+/* ================= EMPTY STATE ================= */
+
+.empty-state {
+    text-align: center;
+    padding: 25px !important;
+    color: #b98ea0;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+table th {
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+table td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #fce4ec;
+    text-align: center;
+    color: #6d5360;
+    font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff8fb;
+}
+
+tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+
+/* ================= PLAT ================= */
+
+.plat {
+    display: inline-block;
+    background-color: #fff0f6;
+    color: #d94f87;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.masuk {
+    background-color: #e8f6ed;
+    color: #6fa883;
+}
+
+.status.keluar {
+    background-color: #fce4ec;
+    color: #d96b8d;
+}
+
+
+/* ================= GRUP TOMBOL AKSI (Cetak / Edit / Hapus) ================= */
+
+.aksi-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-aksi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 78px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cetak {
+    background-color: #f8bbd0;
+    color: #7a4058;
+}
+
+.btn-cetak:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #fce4ec;
+    color: #b0698c;
+    border-color: #f5c5d8;
+}
+
+.btn-edit:hover {
+    background-color: #f48fb1;
+    color: white;
+    border-color: #f48fb1;
+}
+
+.btn-hapus {
+    background-color: #e889a5;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background-color: #d96b8d;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn-tambah,
+    .form-actions .btn-batal {
+        width: 100%;
+        text-align: center;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+}

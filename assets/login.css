@@ -1,0 +1,507 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff7fa;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 620px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(220, 170, 185, 0.15);
+}
+
+
+/* =========================
+   BAGIAN KIRI
+========================= */
+
+.login-left {
+    width: 52%;
+
+    background: #fff7fa;
+
+    padding: 55px 50px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.car-icon {
+    font-size: 42px;
+}
+
+.logo h1 {
+    color: #d98fa5;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #806b72;
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ILUSTRASI PARKIR
+========================= */
+
+.parking-image {
+    width: 90%;
+    height: 260px;
+
+    margin-top: 35px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* =========================
+   AWAN
+========================= */
+
+.parking-image::before {
+    content: "☁   ☁       ☁";
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 100%;
+
+    color: #f3dfe6;
+
+    font-size: 45px;
+    letter-spacing: 10px;
+}
+
+
+/* =========================
+   RAMBU P
+========================= */
+
+.parking-sign {
+    position: absolute;
+
+    left: 25px;
+    bottom: 50px;
+
+    width: 80px;
+    height: 100px;
+
+    background: #e8a9b9;
+
+    border: 7px solid #dfa0b1;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 5px rgba(200, 150, 165, 0.12);
+}
+
+.parking-sign::after {
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 70px;
+
+    background: #b89da5;
+
+    bottom: -75px;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+.car {
+    font-size: 120px;
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 38%;
+
+    filter: drop-shadow(0 5px 3px rgba(200, 150, 165, 0.12));
+}
+
+
+/* =========================
+   POS PARKIR
+========================= */
+
+.gate {
+    position: absolute;
+
+    right: 20px;
+    bottom: 45px;
+
+    width: 100px;
+    height: 145px;
+
+    background: #e9b3c1;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.gate-top {
+    position: absolute;
+
+    top: -25px;
+    left: -10px;
+
+    width: 120px;
+    height: 40px;
+
+    background: #dfa0b1;
+
+    border-radius: 50% 50% 10px 10px;
+}
+
+.gate-body {
+    width: 35px;
+    height: 75px;
+
+    background: #f9e8ed;
+
+    position: absolute;
+
+    left: 33px;
+    top: 45px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   PALANG
+========================= */
+
+.barrier {
+    position: absolute;
+
+    right: 75px;
+    bottom: 145px;
+
+    font-size: 80px;
+
+    color: #d98fa5;
+
+    transform: rotate(-35deg);
+}
+
+
+/* =========================
+   SLOGAN
+========================= */
+
+.slogan {
+    margin-top: 20px;
+
+    color: #806b72;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+.heart {
+    margin-top: 12px;
+
+    color: #df9aad;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   BAGIAN KANAN
+========================= */
+
+.login-right {
+    width: 48%;
+
+    padding: 75px 60px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-right h2 {
+    font-size: 34px;
+
+    color: #3f3639;
+
+    margin-bottom: 8px;
+}
+
+.login-description {
+    color: #806b72;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #66545a;
+
+    margin-bottom: 8px;
+}
+
+.form-group select {
+    width: 100%;
+
+    height: 55px;
+
+    border: 1px solid #efdde3;
+
+    border-radius: 10px;
+
+    padding: 0 15px;
+
+    font-size: 15px;
+
+    color: #806b72;
+
+    background: #ffffff;
+
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #dda1b3;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box {
+    width: 100%;
+
+    height: 58px;
+
+    border: 1px solid #efdde3;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 16px;
+
+    background: #ffffff;
+}
+
+.input-box:focus-within {
+    border-color: #dda1b3;
+}
+
+.input-icon {
+    font-size: 22px;
+
+    margin-right: 12px;
+
+    color: #c58b9d;
+}
+
+.input-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #4d4145;
+}
+
+.input-box input::placeholder {
+    color: #9b858d;
+
+    font-weight: 600;
+}
+
+.eye {
+    cursor: pointer;
+
+    font-size: 18px;
+
+    color: #c58b9d;
+}
+
+
+/* =========================
+   TOMBOL LOGIN
+========================= */
+
+.login-button {
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e0a0b3;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #d68fa4;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.system-name {
+    text-align: center;
+
+    margin-top: 60px;
+
+    color: #8a747b;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right {
+        width: 100%;
+    }
+
+    .login-left {
+        padding: 35px 25px;
+    }
+
+    .login-right {
+        padding: 40px 30px;
+    }
+
+    .parking-image {
+        width: 100%;
+    }
+
+    .system-name {
+        margin-top: 35px;
+    }
+}

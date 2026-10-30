@@ -1,0 +1,259 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 50px;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #d63384;
+    margin-bottom: 7px;
+}
+
+.header p {
+    font-size: 15px;
+    color: #777;
+}
+
+
+/* ================================
+   BUTTON KEMBALI
+================================ */
+
+.btn-kembali {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #d63384;
+    border: 1px solid #f3b6d2;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #ffe0ec;
+}
+
+
+/* ================================
+   TOP ACTION
+================================ */
+
+.top-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-tambah {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #d63384;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-tambah:hover {
+    background-color: #c2185b;
+}
+
+
+/* ================================
+   TABLE CARD
+================================ */
+
+.table-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(214, 51, 132, 0.08);
+    border: 1px solid #f8d9e6;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #ffe0ec;
+}
+
+thead th {
+    color: #c2185b;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #f7e0e9;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #fff8fb;
+}
+
+
+/* ================================
+   JENIS KENDARAAN
+================================ */
+
+.jenis {
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* ================================
+   HARGA
+================================ */
+
+.harga {
+    color: #d63384;
+    font-weight: bold;
+}
+
+
+/* ================================
+   AKSI
+================================ */
+
+.aksi {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-edit,
+.btn-hapus {
+    text-decoration: none;
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-edit {
+    background-color: #ffe0ec;
+    color: #c2185b;
+}
+
+.btn-edit:hover {
+    background-color: #f9c5da;
+}
+
+.btn-hapus {
+    background-color: #fff0f0;
+    color: #d9534f;
+}
+
+.btn-hapus:hover {
+    background-color: #ffdede;
+}
+
+
+/* ================================
+   DATA KOSONG
+================================ */
+
+.kosong {
+    text-align: center;
+    padding: 35px !important;
+    color: #999;
+    font-style: italic;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .btn-kembali {
+        padding: 9px 14px;
+    }
+
+    .table-card {
+        padding: 15px;
+    }
+
+    .aksi {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}

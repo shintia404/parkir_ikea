@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff5fa;
+    min-height: 100vh;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: #d85b91;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #777;
+    font-size: 14px;
+}
+
+.btn-back {
+    text-decoration: none;
+    background-color: #f3a6c7;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #df82aa;
+}
+
+/* INFORMASI */
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #ffe0ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.info-card span {
+    color: #888;
+    font-size: 13px;
+}
+
+.info-card h2 {
+    color: #d85b91;
+    margin-top: 5px;
+}
+
+/* AREA PARKIR */
+
+.parking-section {
+    background-color: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.section-header p {
+    color: #888;
+    font-size: 13px;
+}
+
+/* DENAH */
+
+.parking-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 20px;
+    background-color: #fff8fb;
+    border-radius: 15px;
+}
+
+/* SLOT */
+
+.parking-slot {
+    min-height: 120px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.parking-slot span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.parking-slot small {
+    font-size: 12px;
+}
+
+/* SLOT TERSEDIA */
+
+.available {
+    background-color: #e8fff1;
+    border-color: #91dfad;
+    color: #319456;
+}
+
+.available:hover {
+    transform: translateY(-3px);
+    background-color: #d9fae6;
+}
+
+/* SLOT TERISI */
+
+.occupied {
+    background-color: #ffe8ee;
+    border-color: #f1a0b8;
+    color: #d65378;
+}
+
+.occupied:hover {
+    transform: translateY(-3px);
+    background-color: #ffdae4;
+}
+
+/* LEGEND */
+
+.legend {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+.legend-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.available-box {
+    background-color: #91dfad;
+}
+
+.occupied-box {
+    background-color: #f1a0b8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .parking-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .parking-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= CRUD: ALERT / NOTIFIKASI ================= */
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.alert-success {
+    background-color: #e8f6ed;
+    color: #4f9169;
+    border: 1px solid #cdeeda;
+}
+
+.alert-error {
+    background-color: #fdecef;
+    color: #c8455f;
+    border: 1px solid #f7ccd4;
+}
+
+/* ================= CRUD: CARD ================= */
+
+.card {
+    background-color: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mb-card {
+    margin-bottom: 25px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    color: #d85b91;
+    font-size: 20px;
+}
+
+/* ================= CRUD: FORM ================= */
+
+.form-grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #987080;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    border: 1px solid #f5c5d8;
+    background-color: #fffafd;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #5a3d4a;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f3a6c7;
+    box-shadow: 0 0 0 3px rgba(243, 166, 199, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-tambah {
+    display: inline-block;
+    background-color: #f3a6c7;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tambah:hover {
+    background-color: #df82aa;
+}
+
+.btn-batal {
+    display: inline-block;
+    background-color: #f1f1f5;
+    color: #7a6b74;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-batal:hover {
+    background-color: #e6e6ec;
+}
+
+/* ================= CRUD: TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.card table th {
+    background-color: #ffe0ed;
+    color: #7a4058;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.card table td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #fce4ec;
+    text-align: center;
+    color: #6d5360;
+    font-size: 13px;
+}
+
+.card tbody tr:nth-child(even) {
+    background-color: #fff8fb;
+}
+
+.card tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 25px !important;
+    color: #b98ea0;
+}
+
+/* ================= CRUD: STATUS BADGE ================= */
+
+.status-tersedia {
+    display: inline-block;
+    background-color: #e8fff1;
+    color: #319456;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.status-penuh {
+    display: inline-block;
+    background-color: #ffe8ee;
+    color: #d65378;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* ================= CRUD: TOMBOL EDIT / HAPUS ================= */
+
+.btn-edit {
+    display: inline-block;
+    background-color: #ffe0ed;
+    color: #7a4058;
+    padding: 7px 12px;
+    border-radius: 7px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #f3a6c7;
+    color: white;
+}
+
+.btn-hapus {
+    display: inline-block;
+    background-color: #e889a5;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hapus:hover {
+    background-color: #d96b8d;
+}
+
+/* ================= CRUD: RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}

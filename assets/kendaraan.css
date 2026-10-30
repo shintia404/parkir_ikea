@@ -1,0 +1,426 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #5a3d4a;
+    padding: 30px;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.10);
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #d94f87;
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #987080;
+    font-size: 14px;
+}
+
+/* ================= LINK ================= */
+
+a {
+    text-decoration: none;
+}
+
+/* ================= TOMBOL KEMBALI ================= */
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #f48fb1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #e56b97;
+}
+
+/* ================= TOMBOL TAMBAH ================= */
+
+.btn-tambah {
+    display: inline-block;
+    background-color: #f48fb1;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tambah:hover {
+    background-color: #e56b97;
+}
+
+/* ================= TOMBOL BATAL ================= */
+
+.btn-batal {
+    display: inline-block;
+    background-color: #f1f1f5;
+    color: #7a6b74;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-batal:hover {
+    background-color: #e6e6ec;
+}
+
+/* ================= ALERT ================= */
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.alert-success {
+    background-color: #e8f6ed;
+    color: #4f9169;
+    border: 1px solid #cdeeda;
+}
+
+.alert-error {
+    background-color: #fdecef;
+    color: #c8455f;
+    border: 1px solid #f7ccd4;
+}
+
+/* ================= CARD SPACING ================= */
+
+.mb-card {
+    margin-bottom: 25px;
+}
+
+/* ================= FORM ================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #987080;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    border: 1px solid #f5c5d8;
+    background-color: #fffafd;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #5a3d4a;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f48fb1;
+    box-shadow: 0 0 0 3px rgba(244, 143, 177, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #c79aaa;
+}
+
+/* ================= INFO PLAT ================= */
+
+.plat-info {
+    font-size: 11px;
+    color: #b98ea0;
+}
+
+/* ================= FORM ACTION ================= */
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-state {
+    text-align: center;
+    padding: 25px !important;
+    color: #b98ea0;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    background-color: white;
+    border: 1px solid #ffe0ec;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(221, 112, 153, 0.08);
+}
+
+/* ================= CARD HEADER ================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    color: #d05a86;
+    font-size: 20px;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    display: flex;
+    border: 1px solid #f5c5d8;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fffafd;
+}
+
+.search-box input {
+    width: 220px;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    color: #6d5360;
+}
+
+.search-box input::placeholder {
+    color: #c79aaa;
+}
+
+.search-box button {
+    border: none;
+    background-color: #f8bbd0;
+    color: white;
+    padding: 0 14px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-box button:hover {
+    background-color: #f48fb1;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+/* HEADER TABLE */
+
+table th {
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ISI TABLE */
+
+table td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #fce4ec;
+    text-align: center;
+    color: #6d5360;
+    font-size: 13px;
+}
+
+/* BARIS TABEL */
+
+tbody tr:nth-child(even) {
+    background-color: #fff8fb;
+}
+
+tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+/* ================= PLAT NOMOR ================= */
+
+.plat {
+    display: inline-block;
+    background-color: #fff0f6;
+    color: #d94f87;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ================= JENIS KENDARAAN ================= */
+
+.jenis-motor {
+    display: inline-block;
+    background-color: #fce4ec;
+    color: #c83f76;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.jenis-mobil {
+    display: inline-block;
+    background-color: #fdebf2;
+    color: #b9577b;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* ================= TOMBOL EDIT ================= */
+
+.btn-edit {
+    display: inline-block;
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 7px 12px;
+    border-radius: 7px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+/* ================= TOMBOL HAPUS ================= */
+
+.btn-hapus {
+    display: inline-block;
+    background-color: #e889a5;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hapus:hover {
+    background-color: #d96b8d;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn-tambah,
+    .form-actions .btn-batal {
+        text-align: center;
+    }
+
+    table {
+        min-width: 850px;
+    }
+}

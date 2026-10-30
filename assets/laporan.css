@@ -1,0 +1,378 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #5a3d4a;
+    padding: 30px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #d94f87;
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #987080;
+    font-size: 14px;
+}
+
+
+/* ================= BUTTON KEMBALI ================= */
+
+.btn-kembali {
+    text-decoration: none;
+    background-color: #f48fb1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #e56b97;
+}
+
+
+/* ================= FILTER ================= */
+
+.filter-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.10);
+}
+
+.filter-card h2 {
+    color: #d05a86;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.filter-card form {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 13px;
+    color: #7a4058;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 190px;
+    padding: 11px;
+    border: 1px solid #f5c5d8;
+    border-radius: 9px;
+    outline: none;
+    color: #6d5360;
+    background-color: #fffafd;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f48fb1;
+}
+
+
+/* ================= BUTTON FILTER ================= */
+
+.btn-filter {
+    border: none;
+    background-color: #f48fb1;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-filter:hover {
+    background-color: #e56b97;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 6px 20px rgba(221, 112, 153, 0.08);
+}
+
+.summary-card .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff0f6;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.summary-card h3 {
+    color: #d94f87;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.summary-card p {
+    color: #987080;
+    font-size: 12px;
+}
+
+
+/* ================= CARD LAPORAN ================= */
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.10);
+}
+
+
+/* ================= CARD HEADER ================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    color: #d05a86;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    color: #987080;
+    font-size: 13px;
+}
+
+
+/* ================= BUTTON CETAK ================= */
+
+.btn-cetak {
+    border: none;
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 11px 17px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cetak:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+}
+
+
+/* HEADER TABLE */
+
+table th {
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* ISI TABLE */
+
+table td {
+    padding: 13px 10px;
+    text-align: center;
+    border-bottom: 1px solid #fce4ec;
+    color: #6d5360;
+    font-size: 13px;
+}
+
+
+/* BARIS TABEL */
+
+tbody tr:nth-child(even) {
+    background-color: #fff8fb;
+}
+
+tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+
+/* ================= PLAT ================= */
+
+.plat {
+    display: inline-block;
+    background-color: #fff0f6;
+    color: #d94f87;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+/* ================= HARGA ================= */
+
+.harga {
+    display: inline-block;
+    background-color: #fce4ec;
+    color: #c83f76;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-card form {
+        align-items: stretch;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+/* ================= CETAK ================= */
+
+@media print {
+
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .btn-kembali,
+    .filter-card,
+    .btn-cetak,
+    .summary {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        box-shadow: none;
+        border: none;
+    }
+}

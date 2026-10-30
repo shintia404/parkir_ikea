@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #fff7fa;
+    color: #555;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #b84f6f;
+    font-size: 30px;
+}
+
+.header p {
+    margin-top: 7px;
+    color: #777;
+}
+
+/* CARD */
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #b84f6f;
+}
+
+/* FORM */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #d77b96;
+}
+
+/* BUTTON */
+
+button,
+a {
+    font-family: Arial, sans-serif;
+}
+
+.btn-simpan {
+    border: none;
+    background: #d77b96;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-simpan:hover {
+    background: #bd5f7c;
+}
+
+.btn-kembali {
+    background: #d77b96;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-batal {
+    background: #eee;
+    color: #555;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* DAFTAR USER */
+
+.judul-daftar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.judul-daftar span {
+    background: #f8dce5;
+    color: #b84f6f;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead {
+    background: #d88ba1;
+    color: white;
+}
+
+th {
+    padding: 13px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #fff8fa;
+}
+
+/* ROLE */
+
+.role {
+    background: #f8dce5;
+    color: #b84f6f;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* STATUS */
+
+.status {
+    background: #e4f3df;
+    color: #66965c;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* EDIT */
+
+.btn-edit {
+    background: #f0a0b7;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-edit:hover {
+    background: #d77b96;
+}
+
+/* HAPUS */
+
+.btn-hapus {
+    background: #e7a1a1;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* EDIT CARD */
+
+.edit-card {
+    max-width: 700px;
+}
+
+.edit-card input,
+.edit-card select {
+    padding: 13px;
+}

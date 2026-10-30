@@ -1,0 +1,422 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #5a3d4a;
+    padding: 30px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #d94f87;
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #987080;
+    font-size: 14px;
+}
+
+
+/* ================= BUTTON KEMBALI ================= */
+
+.btn-kembali {
+    text-decoration: none;
+    background-color: #f48fb1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #e56b97;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.10);
+}
+
+
+/* ================= CARD HEADER ================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    color: #d05a86;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    color: #987080;
+    font-size: 13px;
+}
+
+
+/* ================= BUTTON CETAK ================= */
+
+.btn-cetak {
+    border: none;
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 11px 17px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-cetak:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #f8bbd0;
+    color: #7a4058;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 13px;
+}
+
+table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #fce4ec;
+    color: #6d5360;
+    font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff8fb;
+}
+
+tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+
+/* ================= BADGE PLAT & HARGA ================= */
+
+.plat {
+    display: inline-block;
+    background-color: #fff0f6;
+    color: #d94f87;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.harga {
+    display: inline-block;
+    background-color: #fce4ec;
+    color: #c83f76;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.badge-total {
+    display: inline-block;
+    background-color: #d94f87;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* ================= ROW TOTAL ================= */
+
+.row-total td {
+    background-color: #fff0f6;
+    border-top: 2px solid #f8bbd0;
+    border-bottom: none;
+    font-weight: bold;
+    color: #7a4058;
+}
+
+
+/* ================= KARTU STRUK (RECEIPT) =================
+   Dipakai di v_struk_parkir.php (struk penuh) dan preview struk
+   di v_keluar_kendaraan.php. Sebelumnya kelas-kelas ini (.struk,
+   .garis, .waktu-item, dst) tidak didefinisikan sama sekali, jadi
+   baris label/nilai menempel tanpa jarak dan header struk ikut
+   memakai .header generik (flex row + space-between) di atas. */
+
+.struk-container {
+    max-width: 420px;
+    margin: 30px auto;
+}
+
+.struk {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 28px 26px;
+    border: 1px solid #ffe0ec;
+    box-shadow: 0 8px 25px rgba(221, 112, 153, 0.12);
+}
+
+/* Header struk (logo + judul + subjudul) tampil rapi di tengah,
+   beda dari .header halaman biasa yang flex row space-between. */
+.struk .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.struk .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: #ffd5e2;
+    color: #d94f87;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.struk .header h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.struk .header p {
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+
+.garis {
+    border-top: 1.5px dashed #f0c8d8;
+    margin: 16px 0;
+}
+
+.struk .info .row,
+.struk .biaya .row,
+.struk .biaya .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #6d5360;
+    margin-bottom: 8px;
+}
+
+.struk .info .row:last-child,
+.struk .biaya .row:last-child {
+    margin-bottom: 0;
+}
+
+.struk .info .row strong,
+.struk .biaya .row strong {
+    color: #333;
+    text-align: right;
+}
+
+.struk .waktu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.struk .waktu-item {
+    flex: 1;
+}
+
+.struk .waktu-item span {
+    display: block;
+    font-size: 11px;
+    color: #987080;
+    margin-bottom: 4px;
+}
+
+.struk .waktu-item strong {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.struk .waktu-item small {
+    display: block;
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 2px;
+}
+
+.struk .biaya .total {
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px dashed #f0c8d8;
+    font-size: 15px;
+    font-weight: bold;
+    color: #d94f87;
+}
+
+.struk .footer {
+    text-align: center;
+    margin-top: 0;
+}
+
+.struk .footer p {
+    font-size: 12px;
+    color: #987080;
+}
+
+.struk .footer strong {
+    display: block;
+    margin: 4px 0;
+    color: #d94f87;
+    font-size: 14px;
+}
+
+.struk .footer small {
+    display: block;
+    color: #aaa;
+    font-size: 11px;
+}
+
+/* Wadah tombol di bawah struk (layout saja — warna tombol tetap
+   ikut kelas tombolnya sendiri, mis. .btn-cetak/.btn-kembali,
+   supaya tidak bentrok dengan tombol lain yang memakai .aksi). */
+.aksi {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .header h1 {
+        font-size: 23px;
+    }
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .struk-container {
+        margin: 15px auto;
+    }
+    .struk {
+        padding: 22px 18px;
+    }
+}
+
+
+/* ================= PRINT ================= */
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    .btn-kembali,
+    .btn-cetak,
+    .aksi {
+        display: none;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .card {
+        box-shadow: none;
+        border: none;
+    }
+    .struk-container {
+        max-width: 100%;
+        margin: 0;
+    }
+    .struk {
+        box-shadow: none;
+        border: none;
+    }
+    table th {
+        background-color: #f8bbd0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #fff8fb !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .row-total td {
+        background-color: #fff0f6 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #333;
+    padding: 30px;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* FORM CARD */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 30px 35px;
+    box-shadow: 0 5px 20px rgba(230, 120, 170, 0.15);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #ffe0ed;
+}
+
+.header h1 {
+    color: #d94f87;
+    font-size: 26px;
+}
+
+/* BUTTON KEMBALI */
+.btn-kembali {
+    text-decoration: none;
+    background-color: #ffe1ed;
+    color: #c83f76;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #ffc9dd;
+}
+
+/* FORM */
+form {
+    width: 100%;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* INPUT & SELECT */
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 45px;
+    padding: 0 14px;
+    border: 1px solid #f2bfd2;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fffafd;
+    color: #444;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #e879a5;
+    box-shadow: 0 0 0 3px rgba(232, 121, 165, 0.12);
+}
+
+/* BUTTON GROUP */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #ffe0ed;
+}
+
+/* BATAL */
+.btn-batal {
+    text-decoration: none;
+    background-color: #eeeeee;
+    color: #555;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-batal:hover {
+    background-color: #dddddd;
+}
+
+/* SIMPAN */
+.btn-simpan {
+    border: none;
+    background-color: #e879a5;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-simpan:hover {
+    background-color: #d95d8e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .form-card {
+        padding: 22px;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn-batal,
+    .btn-simpan {
+        width: 100%;
+        text-align: center;
+    }
+}
